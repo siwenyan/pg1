@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="1" total="3" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9293" started-at="2017-10-07T21:43:45Z" finished-at="2017-10-07T21:43:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9293" started-at="2017-10-07T21:43:45Z" finished-at="2017-10-07T21:43:54Z">
+      <class name="com.prometheusgroup.interview.NewTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="beforeTest" is-config="true" duration-ms="4845" started-at="2017-10-07T17:43:45Z" finished-at="2017-10-07T17:43:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="basicSearchBarTest()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="basicSearchBarTest" duration-ms="1658" started-at="2017-10-07T17:43:50Z" finished-at="2017-10-07T17:43:51Z">
+          <exception class="junit.framework.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Puppy]> but was:<[搜索结果]>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[junit.framework.ComparisonFailure: expected:<[Puppy]> but was:<[搜索结果]>
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at junit.framework.Assert.assertEquals(Assert.java:91)
+	at com.prometheusgroup.interview.NewTest.basicSearchBarTest(NewTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- junit.framework.ComparisonFailure -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicSearchBarTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="afterMethod" is-config="true" duration-ms="2010" started-at="2017-10-07T17:43:51Z" finished-at="2017-10-07T17:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="autocompleteSearchTest()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="autocompleteSearchTest" duration-ms="0" started-at="2017-10-07T17:43:53Z" depends-on-methods="com.prometheusgroup.interview.NewTest.hideContentsTest" finished-at="2017-10-07T17:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autocompleteSearchTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="afterTest" is-config="true" duration-ms="766" started-at="2017-10-07T17:43:53Z" finished-at="2017-10-07T17:43:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="hideContentsTest()[pri:0, instance:com.prometheusgroup.interview.NewTest@51081592]" name="hideContentsTest" duration-ms="0" started-at="2017-10-07T17:43:53Z" depends-on-methods="com.prometheusgroup.interview.NewTest.basicSearchBarTest" finished-at="2017-10-07T17:43:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hideContentsTest -->
+      </class> <!-- com.prometheusgroup.interview.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
