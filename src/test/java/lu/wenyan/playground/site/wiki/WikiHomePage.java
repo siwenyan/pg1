@@ -27,13 +27,9 @@ public class WikiHomePage extends BasePage {
 			this.waitForPresence(By.id("searchInput"));
 			this.waitForPresence(By.xpath("//button[@type='submit']"));
 			return true;
-		} catch(TimeoutException e) {
+		} catch (TimeoutException e) {
 			return false;
 		}
-	}
-
-	public void goTo() {
-		this.webDriver.get("https://www.wikipedia.org/");
 	}
 
 	public void search(String q) {

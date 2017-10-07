@@ -19,7 +19,6 @@ public class WikiTest {
 
 	@Test
 	public void basicSearchBarTest() {
-		this.wikiSite.wikiHomePage().goTo();
 		Assert.assertTrue(this.wikiSite.wikiHomePage().isSafe());
 
 		this.wikiSite.wikiHomePage().search("Puppies");
