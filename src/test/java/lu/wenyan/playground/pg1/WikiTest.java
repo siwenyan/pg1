@@ -42,7 +42,6 @@ public class WikiTest {
 		System.out.println(suggestionFrance.getAttribute("href"));
 
 		suggestionFrance.click();
-		BasePage.wait(3);
 		Assert.assertTrue(this.wikiSite.wikiPage().isSafe());
 		Assert.assertEquals("France", this.wikiSite.wikiPage().firstHeading.getText());
 	}

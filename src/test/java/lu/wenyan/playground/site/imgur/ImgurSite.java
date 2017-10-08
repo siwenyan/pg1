@@ -3,14 +3,15 @@ package lu.wenyan.playground.site.imgur;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class ImgurSite {
+import lu.wenyan.playground.site.BaseSite;
 
-	private WebDriver webDriver = null;
+public class ImgurSite extends BaseSite {
 
 	private ImgurHomePage imgurHomePage = null;
 
 	public ImgurSite(WebDriver webDriver) {
-		this.webDriver = webDriver;
+		super(webDriver);
+
 		this.webDriver.get("https://imgur.com/");
 		this.imgurHomePage = PageFactory.initElements(this.webDriver, ImgurHomePage.class);
 	}
